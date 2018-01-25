@@ -1,4 +1,34 @@
-### 1.Reverse Integer
+### 1.Two Sum
+#### Examples
+```
+Given nums = [2, 7, 11, 15], target = 9,
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+```
+```
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] returnVal = null;
+        for(int i=0;i<nums.length-1;i++) {
+            for(int j=i+1;j<nums.length;j++) {
+                if(nums[i] + nums[j] == target) {
+                    returnVal =  new int[]{i, j};
+                    break;
+                }
+            }
+        }
+        return returnVal;
+    }
+}
+```
+
+
+
+### 2.Reverse Integer
+#### Examples
+```
+
+```
 ```
 class Solution {
     public int reverse(int x) {
